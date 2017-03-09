@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/vectordrawable.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="100dp"
+    android:width="100dp"
+    android:viewportHeight="60"
+    android:viewportWidth="60">
+    <group
+        android:name="sun"
+        android:rotation="0"
+        android:translateX="18"
+        android:translateY="20"
+        android:pivotX="12"
+        android:pivotY="12">
+        <path
+            android:name="sun_path"
+            android:fillColor="#6767f9"
+            android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zM12,20c-4.42,0 -8,-3.58 -8,-8s3.58,-8 8,-8 8,3.58 8,8 -3.58,8 -8,8z" />/>
+        <group
+            android:name="earth"
+            android:rotation="0"
+            android:translateX="21"
+            android:translateY="12"
+            android:scaleY="0.2"
+            android:scaleX="0.2">
+            <path
+                android:name="earth_path"
+                android:fillColor="#f23f57"
+                android:pathData="m -10 0 a 10,10 0 1,0 20,0 a 10,10 0 1,0 -20,0"/>
+            <group
+                android:name="moon"
+                android:translateX="15">
+                <path
+                    android:name="moon_path"
+                    android:fillColor="#ffc404"
+                    android:pathData="m -5 0 a 4,4 0 1,0 10,0 a 5,5 0 1,0 -10,0"/>
+            </group>
+        </group>
+    </group>
+</vector>
