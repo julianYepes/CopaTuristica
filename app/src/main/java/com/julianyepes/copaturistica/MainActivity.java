@@ -86,18 +86,41 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         int id = item.getItemId();
+
+
         switch (id){
             case R.id.mPerfil:
-                Intent intent1 = new Intent(MainActivity.this,ProfileActivity.class);
-                intent1.putExtra("username",user);
-                intent1.putExtra("email",email);
-                startActivity(intent1);
+                Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
+                intent.putExtra("username",user);
+                intent.putExtra("email",email);
+                startActivity(intent);
                 finish();
                 break;
             case R.id.mCerrar:
-                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-                setResult(RESULT_OK,intent);
-                startActivityForResult(intent,3);
+                Intent intent1 = new Intent(MainActivity.this,LoginActivity.class);
+                setResult(RESULT_OK,intent1);
+                startActivityForResult(intent1,3);
+                finish();
+                break;
+            case R.id.mHoteles:
+                Intent intent2 = new Intent(MainActivity.this,LoginActivity.class);
+                intent2.putExtra("username",user);
+                intent2.putExtra("email",email);
+                startActivity(intent2);
+                finish();
+                break;
+            case R.id.mBares:
+                Intent intent3 = new Intent(MainActivity.this,LoginActivity.class);
+                intent3.putExtra("username",user);
+                intent3.putExtra("email",email);
+                startActivity(intent3);
+                finish();
+                break;
+            case R.id.mSitios:
+                Intent intent4 = new Intent(MainActivity.this,LoginActivity.class);
+                intent4.putExtra("username",user);
+                intent4.putExtra("email",email);
+                startActivity(intent4);
                 finish();
                 break;
         }

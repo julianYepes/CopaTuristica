@@ -2,8 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/mPerfil"
         android:title="@string/miperfil"/>
+    <item android:id="@+id/mHoteles"
+        android:title="@string/hoteles"/>
+    <item android:id="@+id/mBares"
+        android:title="@string/bares"/>
+    <item android:id="@+id/mSitios"
+        android:title="@string/sitios"/>
     <item
         android:id="@+id/mCerrar"
-        android:title="@string/Salir"
-        />
+        android:title="@string/Salir" />
 </menu>

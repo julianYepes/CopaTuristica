@@ -24,4 +24,8 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="input_data">Ingrese todos los campos</string>
+    <string name="hoteles">Hoteles</string>
+    <string name="bares">Bares</string>
+    <string name="sitios">Sitios Turisticos</string>
+    <string name="title_activity_places">Places Activity</string>
 </resources>
