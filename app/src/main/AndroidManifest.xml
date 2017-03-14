@@ -9,21 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity"></activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".PlacesTabActivity"
+            android:label="@string/title_activity_places_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".listActivity">
+
+        </activity>
+        <activity
+            android:name=".DrawerActivity"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity
-            android:name=".PlacesActivity"
-            android:label="@string/title_activity_places"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

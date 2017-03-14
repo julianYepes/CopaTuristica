@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.julianyepes.copacabanaturistica.PerfilActivity"
+    tools:context="com.julianyepes.copaturistica.ProfileActivity"
     android:gravity="center"
     android:background="#205C96">
 

@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==1234 && resultCode == RESULT_OK){
+        if(requestCode==33 && resultCode == RESULT_OK){
             username = data.getExtras().getString("username");
             password = data.getExtras().getString("password");
             email = data.getExtras().getString("email");
@@ -28,26 +28,10 @@ public class LoginActivity extends AppCompatActivity {
             Log.d("password",password);
             Toast.makeText(this, "Registro Exitoso", Toast.LENGTH_SHORT).show();
 
-        }else if (requestCode==1234 && resultCode == RESULT_CANCELED){
+        }else if (requestCode==33 && resultCode == RESULT_CANCELED){
             Toast.makeText(this, "Registro Cancelado", Toast.LENGTH_SHORT).show();
-        }else if(requestCode==3 && resultCode == RESULT_OK){
-            Toast.makeText(this, "Saliste", Toast.LENGTH_SHORT).show();
         }
     }
-
-    /* protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode==1234 && resultCode == RESULT_OK){
-            Bundle extras = getIntent().getExtras();//para obtener datos de otra actividad
-
-            username = extras.getString("username");
-            password = extras.getString("password");
-            email = extras.getString("email");
-            Log.d("username",username);
-
-        }else if (requestCode==1234 && resultCode == RESULT_CANCELED){
-            Toast.makeText(this, "Registro Cancelado", Toast.LENGTH_SHORT).show();
-        }
-    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
-                startActivityForResult(intent,1234);
+                startActivityForResult(intent,33);
             }
         });
 
@@ -82,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                     Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                     intent.putExtra("username",username);
                     intent.putExtra("email",email);
-                    startActivityForResult(intent,2);
+                    startActivity(intent);
                 }else{
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.input_error), Toast.LENGTH_SHORT).show();
                 }

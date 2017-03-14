@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/copa_splash"
-    tools:context="com.julianyepes.copacabanaturistica.SplashActivity">
+    tools:context="com.julianyepes.copaturistica.SplashActivity">
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"

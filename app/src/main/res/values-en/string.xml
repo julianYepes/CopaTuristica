@@ -14,14 +14,4 @@
     <string name="texto">Welcome to Copacabana</string>
     <string name="home">Home</string>
     <string name="name">Name</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hotelUno">HOTEL UNO</string>
-    <string name="hotelDos">HOTEL DOS</string>
-    <string name="title_activity_hoteles">Hoteles</string>
-    <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
-    <string name="input_data">Enter all fields</string>
-    <string name="input_pass">Contraseñas diferentes</string>
-    <string name="input_error">Error en los datos</string>
 </resources>

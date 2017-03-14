@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/mPerfil"
-        android:title="@string/miperfil"/>
-    <item android:id="@+id/mHoteles"
+    <item android:id="@+id/mItem0"
         android:title="@string/hoteles"/>
-    <item android:id="@+id/mBares"
+    <item android:id="@+id/mItem1"
         android:title="@string/bares"/>
-    <item android:id="@+id/mSitios"
-        android:title="@string/sitios"/>
-    <item
-        android:id="@+id/mCerrar"
+    <item android:id="@+id/mItem2"
+        android:title="@string/sites"/>
+    <item android:id="@+id/mItem3"
+        android:title="@string/miperfil"/>
+    <item android:id="@+id/mItem4"
         android:title="@string/Salir" />
 </menu>
