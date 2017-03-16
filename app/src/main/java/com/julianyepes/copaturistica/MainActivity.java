@@ -41,15 +41,21 @@ public class MainActivity extends AppCompatActivity {
 
         switch (id){
             case R.id.mItem0://Hoteles
-                intent.putExtra("places","Hotels");
+                intent.putExtra("places","Deporte");
+                intent.putExtra("username",user);
+                intent.putExtra("email",email);
                 startActivity(intent);
                 break;
             case R.id.mItem1://Bares
                 intent.putExtra("places","Bares");
+                intent.putExtra("username",user);
+                intent.putExtra("email",email);
                 startActivity(intent);
                 break;
             case R.id.mItem2://Sitios Turisticos
                 intent.putExtra("places","SiteTour");
+                intent.putExtra("username",user);
+                intent.putExtra("email",email);
                 startActivity(intent);
                 break;
             case R.id.mItem3://Perfil
@@ -60,8 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.mItem4://Salir de la Aplicacion
                 Intent intent4 = new Intent(MainActivity.this,LoginActivity.class);
-                //setResult(RESULT_OK,intent1);
-                //startActivityForResult(intent4,3);
                 startActivity(intent4);
                 finish();
                 break;

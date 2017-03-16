@@ -46,7 +46,6 @@ public class ProfileActivity extends AppCompatActivity {
                 intent1.putExtra("username",user);
                 intent1.putExtra("email",email);
                 startActivity(intent1);
-                finish();
                 break;
             case R.id.mCerrar:
                 Intent intent = new Intent(ProfileActivity.this,LoginActivity.class);

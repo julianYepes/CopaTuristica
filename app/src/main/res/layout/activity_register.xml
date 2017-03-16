@@ -8,14 +8,15 @@
     tools:context="com.julianyepes.copaturistica.RegisterActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
+        android:background="@drawable/copa_parque"
         android:gravity="center"
-        android:textSize="30sp"
-        android:textColor="@color/white"
         android:text="@string/Register"
-        android:background="@drawable/copa_parque"/>
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -64,7 +65,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/cancel"
-            android:id="@+id/bRCancel"/>
+            android:id="@+id/bRCancel" />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -72,7 +73,8 @@
             android:text="@string/Register"
             android:background="@color/colorPrimary"
             android:textColor="@color/white"
-            android:id="@+id/bRRegister"/>
+            android:id="@+id/bRRegister"
+            android:layout_marginBottom="18dp"/>
 
     </LinearLayout>
 

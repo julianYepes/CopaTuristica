@@ -38,13 +38,35 @@ public class PlacesTabActivity extends AppCompatActivity {
     PlaceTab1Fragment tabP3 = new PlaceTab1Fragment();
     TextView tfPlace;
 
-    String str;
+    String titleTab1,titleTab2,titleTab3;
+    String user,email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //str = new String("hola");
+        Bundle extras=getIntent().getExtras();
+        places = extras.getString("places");
+        user=extras.getString("username");
+        email=extras.getString("email");
+
+        switch ( places ){
+            case "Deporte":
+                titleTab1 = getResources().getString(R.string.deporte1);
+                titleTab2 = getResources().getString(R.string.deporte2);
+                titleTab3 = getResources().getString(R.string.deporte3);
+                break;
+            case "Bares":
+                titleTab1 = getResources().getString(R.string.bar1);
+                titleTab2 = getResources().getString(R.string.bar2);
+                titleTab3 = getResources().getString(R.string.bar3);
+                break;
+            case "SiteTour":
+                titleTab1 = getResources().getString(R.string.site1);
+                titleTab2 = getResources().getString(R.string.site2);
+                titleTab3 = getResources().getString(R.string.site3);
+                break;
+        }
 
         setContentView(R.layout.activity_places_tab);
 
@@ -63,16 +85,14 @@ public class PlacesTabActivity extends AppCompatActivity {
 
         ///////////////////////
 
-        Bundle extras=getIntent().getExtras();
-        places = extras.getString("places");
+
         Bundle args1 = new Bundle();
         Bundle args2 = new Bundle();
         Bundle args3 = new Bundle();
-        str = new String("hola");
 
         switch ( places ){
-            case "Hotels":
-                this.setTitle("Hoteles");
+            case "Deporte":
+                this.setTitle("Deporte");
 
                 args1.putInt("place",1);
                 args1.putString("places",places);
@@ -137,31 +157,35 @@ public class PlacesTabActivity extends AppCompatActivity {
         Intent intent = new Intent(PlacesTabActivity.this, PlacesTabActivity.class);
 
         switch (id){
-            case R.id.mItem0://Hoteles
-                intent.putExtra("places","Hotels");
+            case R.id.mItem0://Deportes
+                intent.putExtra("places","Deporte");
+                intent.putExtra("username",user);
+                intent.putExtra("email",email);
                 startActivity(intent);
                 finish();
                 break;
             case R.id.mItem1://Bares
                 intent.putExtra("places","Bares");
+                intent.putExtra("username",user);
+                intent.putExtra("email",email);
                 startActivity(intent);
                 finish();
                 break;
             case R.id.mItem2://Sitios Turisticos
                 intent.putExtra("places","SiteTour");
+                intent.putExtra("username",user);
+                intent.putExtra("email",email);
                 startActivity(intent);
                 finish();
                 break;
             case R.id.mItem3://Perfil
                 Intent intent3 = new Intent(PlacesTabActivity.this,ProfileActivity.class);
-                intent3.putExtra("username","user");
-                intent3.putExtra("email","email");
+                intent3.putExtra("username",user);
+                intent3.putExtra("email",email);
                 startActivity(intent3);
                 break;
             case R.id.mItem4://Salir de la Aplicacion
                 Intent intent4 = new Intent(PlacesTabActivity.this,LoginActivity.class);
-                //setResult(RESULT_OK,intent1);
-                //startActivityForResult(intent4,3);
                 startActivity(intent4);
                 finish();
                 break;
@@ -204,11 +228,11 @@ public class PlacesTabActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return str;
+                    return titleTab1;
                 case 1:
-                    return "Section 2";
+                    return titleTab2;
                 case 2:
-                    return "Section 3";
+                    return titleTab3;
             }
             return null;
         }

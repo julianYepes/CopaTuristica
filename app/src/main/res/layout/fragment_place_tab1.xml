@@ -3,22 +3,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.julianyepes.copaturistica.PlaceTab1Fragment">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:orientation="vertical">
 
-        <TextView
-            android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hotel1"
-            android:textColor="@color/white"
-            android:textSize="30dp"
-            android:background="@drawable/parque_principal"
-            android:id="@+id/tfPlace"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/site1"
+            android:id="@+id/ifFoto"
+            android:background="#3f51b4"/>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/lContenedor">
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/site1"
+                    android:textSize="30dp"
+                    android:id="@+id/tfPlace"/>
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/site1"
+                    android:id="@+id/tfDescri"
+                    android:layout_margin="20dp"
+                    android:padding="20dp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
+
+
+
 
 </FrameLayout>

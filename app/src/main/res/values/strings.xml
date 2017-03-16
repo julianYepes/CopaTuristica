@@ -11,7 +11,26 @@
     <string name="cerrar">Salir</string>
     <string name="Inicio">Inicio</string>
     <string name="Salir">Salir</string>
-    <string name="texto">Bienvenido a Copacabana</string>
+    <string name="fundadora">Copacabana \n"Fundadora de pueblos"</string>
+
+    <string name="texto">\n\n
+
+Datos generales\n\nNIT: 890980767-3\nCódigo DANE: 05212\n
+
+Extensión: 70 Km2\n
+Población: 66.665 (DANE Junio 30/2011)\n
+Clima: Templado\n
+Altitud: 1.454 m.s.n.m.\n
+Gentilicio: Copacabanense\n
+Fecha de Fundación: 8 de Septiembre de 1541\n
+Fundadores: Capitán Jorge Robledo - Fray Facundo de la Parra\n
+\n
+Límites\n\n
+
+•	Al Norte con  el municipio de San Pedro, desde el punto de las Peñas (en la cordillera de Medina), siguiendo por el filo de dicha cordillera hasta el Alto Contador y pasando por los Altos de las Cruces, Bocachica, Chuscal, Rinconfrio  y Marquitos.\n\n
+•	Al Oriente con el municipio de Girardota, desde el Alto de Contador, hasta el Alto de la Virgen.  Partiendo del primero en busca del nacimiento de la quebrada el limonar; estas aguas abajo hasta su confluencia con el río Medellín; estas aguas arriba hasta donde empieza y termina el Cerro del Ancón, de allí siguiendo por las cuchillas de los Alvarado y del Umbí, cortando por los altos de Umbí, Las Cruces, y el alto de La Virgen.
+\n\n•	Al Occidente con el municipio de Bello, desde los nacimientos de la Quebrada Rodas hasta el punto de las peñas, siguiendo el cauce de la quebrada de rodas, hasta su afluencia en el río Medellín; este abajo hasta donde confluyen las aguas de la quebrada Guasimalito o de los escobares, estas aguas arriba hasta su nacimiento, en el punto de las Peñas, punto de partida.
+\n\n•	Al Sur con los municipios de  Guarne y Medellín; con el primero partiendo desde el Alto de La Virgen hasta la confluencia de la Quebrada Chorrillo en la de piedras blancas, pasando por los altos de morrón y de la sierra; con Medellín, desde la Quebrada Piedras Blancas hasta los nacimientos  de la Quebrada Rodas pasando por los puntos Cerro de las Lajas y la manga denominada el retiro.   </string>
     <string name="home">Inicio</string>
     <string name="name">Nombre</string>
     <string name="input_pass">Contraseñas diferentes</string>
@@ -22,16 +41,16 @@
     <string name="sitios">Sitios</string>
     <string name="input_data">Ingrese todos los campos</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="hotel1">hotel1</string>
-    <string name="hotel2">hotel2</string>
-    <string name="hotel3">hotel3</string>
-    <string name="bar1">bar1</string>
-    <string name="bar2">bar2</string>
-    <string name="bar3">bar3</string>
-    <string name="site1">site1</string>
-    <string name="site2">site2</string>
-    <string name="site3">site3</string>
-    <string name="sites">Sitios Turisticos</string>
+    <string name="deporte1">Idem</string>
+    <string name="deporte2">Cristo Rey</string>
+    <string name="deporte3">Ciudadela</string>
+    <string name="bar1">Los dos burros</string>
+    <string name="bar2">Conchita</string>
+    <string name="bar3">Santo Coyote</string>
+    <string name="site1">Santa Cruz</string>
+    <string name="site2">Las Ballenas</string>
+    <string name="site3">San Juan</string>
+    <string name="sites">Sitios de Interes</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_places_tab">TAB ACTIVITY</string>
@@ -42,4 +61,54 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="deportes">Deportes</string>
+    <string name="deporte1_descri">\tUnidad deportiva Pincipal\n\n
+        Cuenta con cancha de futbol sintetica, pista de patinaje, cancha de micro y piscina
+    </string>
+    <string name="deporte2_descri">\tUnidad deportiva Cristo Rey\n\n
+        Cuenta con canhca de futbol sintetica y piscina tipo olimpica
+    </string>
+    <string name="deporte3_descri">\tUnidad Ciudadela\n\n
+        Centro educativo que cuenta con cancha de fubol sintetica\n\n
+    </string>
+    <string name="bar1_descri">\tDireccion\n\n
+        Calle  49 N° 48 - 43  Sector Torres Copacabana\n\n
+    \tTelefono\n\n
+    (+57) 4 401 33 31</string>
+    <string name="bar2_descri">\tDireccion\n\n
+        Carrera 51 N° 50 - 21, Copacabana Diagonal a Davivienda\n\n
+    \tTelefono\n\n
+    (+57) 4 401 31 96</string>
+    <string name="bar3_descri">\tDireccion\n\n
+        Autopista Norte / Vereda el Noral Copacabana\n\n
+    \tTelefono\n\n
+    (+57) 4 401 34 33 \n(+57) 312 895 86 74</string>
+    <string name="site1_descri">\tMonumento a La Santa Cruz\n\n
+        En 1.968, el padre Jesús Bernal Vélez, cura de Copacabana, inició el proyecto de
+        construcción de un monumento a la Santa Cruz como cumplimiento de una
+        promesa porque le salvó la vida a él y a su madre en un accidente automovilístico
+        y por su gran devoción. Copacabana es llamado por los viajantes aéreos y los que
+        vienen del norte del país, "el pueblito de la cruz". Además el cerro donde está
+        la cruz es utilizado como pista de ciclo montañismo. El Santuario está ubicado en
+        la vereda El Cabuyal y se puede acceder al sitio por la vía principal que conduce
+        a la vereda. Se recomienda subir caminando por la vía a Cristo Rey para disfrutar
+        del aire puro del campo y del esplendor de la naturaleza, así como de una gran
+        variedad de productos típicos que ofrecen los residentes. La cima es un mirador
+        que ofrece una maravillosa vista de los municipios de Bello y Copacabana.
+        La otra opción es tomar un colectivo a media cuadra del parque que sube hasta el
+        cerro.</string>
+    <string name="site2_descri">\tParque Recreativo las Ballenas\n\n
+        Ubicado en la vereda Ancón, a 3 kilómetros de la cabecera municipal y a 14 de
+        Medellín, sobre la Autopista Norte. Tiene 16 hectáreas de zonas verdes
+        con senderos para recorrer y disfrutar espacios naturales únicos. Cuenta con
+        lagos, riachuelo, cascada, árboles y jardines. Ofrece una gran variedad de
+        atracciones y servicios para toda la familia: piscinas, toboganes, piletas,
+        baños turcos, canchas de fútbol, tenis y baloncesto, restaurantes y tiendas.</string>
+    <string name="site3_descri">\tIglesia San Juan de la Tasajera\n\n
+        Ubicada a dos kilómetros de la cabecera municipal, en el barrio San Juan, se destaca
+        por su bella y sobria arquitectura. Fue construida en la década de los 60 en el
+        mismo lugar donde se ofició la primera misa de la iglesia católica en el Valle de
+        Aburrá, el 8 de septiembre de 1.541. Destacan su confesionario y las estaciones del
+        viacrucis tallados en madera.</string>
+
 </resources>
