@@ -16,14 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity
-            android:name=".PlacesTabActivity"
-            android:label="@string/title_activity_places_tab"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainNavigationDrawerActivity"
+                  android:theme="@style/AppTheme.NoActionBar"
+            android:label="MainNavigationDrawerActivity"
+            />
+        <activity android:name=".TabsNavigationDrawerActivity"
+            android:label="TabsNavigationDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
     </application>
 
 </manifest>

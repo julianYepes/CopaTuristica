@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_home"
+            android:title="@string/Inicio" />
+        <item
+            android:id="@+id/nav_bares"
+            android:icon="@drawable/ic_bar"
+            android:title="@string/bares" />
+        <item
+            android:id="@+id/nav_deportes"
+            android:icon="@drawable/ic_deporte"
+            android:title="@string/deportes" />
+        <item
+            android:id="@+id/nav_sitios"
+            android:icon="@drawable/ic_site"
+            android:title="@string/sites" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_perfil"
+                android:icon="@drawable/ic_perfil"
+                android:title="@string/miperfil" />
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@drawable/ic_salir"
+                android:title="@string/Salir" />
+        </menu>
+    </item>
+
+</menu>

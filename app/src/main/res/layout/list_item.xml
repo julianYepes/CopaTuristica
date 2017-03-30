@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:id="@+id/listImg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/listIcono"
+                android:src="@drawable/copa_principal"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:textSize="25sp"
+                android:text="Lugar"
+                android:textColor="@color/white"
+                android:id="@+id/listText"
+                android:gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

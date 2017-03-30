@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.julianyepes.copaturistica.SimbolosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/side_nav_bar"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bandera"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Bandera"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/escudo"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Escudo"/>
+    </LinearLayout>
+
+</FrameLayout>
