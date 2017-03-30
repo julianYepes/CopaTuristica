@@ -5,10 +5,13 @@
     tools:context="com.julianyepes.copaturistica.MapaFragment"
     android:background="@drawable/side_nav_bar">
 
-   <ImageView
+   <com.google.android.gms.maps.MapView
+       android.name="com.google.android.gms.maps.SupportMapFragment"
+       android:id="@+id/map"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       android:src="@drawable/mapa"
-       android:layout_margin="10dp"/>
+       >
+
+   </com.google.android.gms.maps.MapView>
 
 </FrameLayout>
