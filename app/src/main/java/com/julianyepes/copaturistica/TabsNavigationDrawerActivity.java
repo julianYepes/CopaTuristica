@@ -1,6 +1,7 @@
 package com.julianyepes.copaturistica;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -37,6 +38,9 @@ public class TabsNavigationDrawerActivity extends AppCompatActivity
     TextView ttUsername;
     TextView ttEmail;
 
+    SharedPreferences prefs;
+    SharedPreferences.Editor editor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,6 +75,10 @@ public class TabsNavigationDrawerActivity extends AppCompatActivity
         ////////////////////////////////////////////////
 
         setContentView(R.layout.activity_tabs_navigation_drawer);
+
+        prefs = getSharedPreferences("MisPreferencias",MODE_PRIVATE);
+        editor = prefs.edit();
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -151,6 +159,8 @@ public class TabsNavigationDrawerActivity extends AppCompatActivity
             intent3.putExtra("fragment","perfil");
             startActivity(intent3);
         } else if (id == R.id.nav_salir) {
+            editor.putInt("login",-1);
+            editor.commit();
             Intent intent4 = new Intent(TabsNavigationDrawerActivity.this,LoginActivity.class);
             startActivity(intent4);
             finish();
