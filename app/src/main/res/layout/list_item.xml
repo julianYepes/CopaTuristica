@@ -4,14 +4,15 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="110dp"
-    android:id="@+id/listImg">
+    android:id="@+id/listImg"
+    android:padding="3dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_margin="10dp">
+        android:padding="5dp">
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

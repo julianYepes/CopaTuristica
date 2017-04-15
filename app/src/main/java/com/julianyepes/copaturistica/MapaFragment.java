@@ -69,12 +69,12 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
-        LatLng udea = new LatLng(6.266953, -75.569111);
+        LatLng copa = new LatLng(6.344823, -75.508549);
         mMap.addMarker(new MarkerOptions().
-                position(udea).
-                title("UdeA").
-                snippet("Nuestra Alma Mater"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(udea, 15));
+                position(copa).
+                title("Copacabana").
+                snippet("Fundadora de pueblos"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(copa, 15));
     }
 
     @Override
